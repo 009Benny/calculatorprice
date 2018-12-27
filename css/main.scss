@@ -1,0 +1,88 @@
+$color-black: #000;
+$color-white: #FFF;
+$color-gray: #5D6D7E;
+$color-blue: #0386ba;
+$color-wine: #922B21;
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100%;
+  height: 100%;
+  font-family: arial;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+//background
+input[type="range"]::-webkit-slider-runnable-track{
+  background: GRAY;
+  color: red;
+}
+input[type="range"]::-webkit-slider-thumb{
+  background: blue;
+  color: blue;
+}
+.center-content{
+  display: block;
+  width: 400px;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  .form-content{
+    background: $color-blue;
+    height: 100%;
+    border: 1px solid $color-gray;
+    border-radius: 25px;
+    .title{
+      color: $color-white;
+    }
+    .money-container, .days-container{
+      height: 80px;
+      width: 95%;
+      padding: 15px 2.5% 5px 2.5%;
+      span{
+        float: left;
+        text-align: left;
+        color: $color-gray;
+        font-weight: 600;
+      }
+    }
+    p{
+      position: relative;
+      top: 5px;
+      margin: 0;
+    }
+    .minus, .sum{
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      color: $color-white;
+      background: $color-gray;
+      border: 1px solid $color-blue;
+      border-radius: 100%;
+    }
+    input{
+      vertical-align: bottom;
+      display: inline-block;
+      width: 80%;
+      margin: 10px 0;
+    }
+
+    .input-content, .data-display, .button-content{
+      background: $color-white;
+    }
+    .button-content{
+      border-radius: 0 0 25px 25px;
+      height: 140px;
+      width: 100%;
+    }
+  }
+}
