@@ -16,7 +16,7 @@
             <span>¿Cuánto dinero necesitas?</span>
             <div class="price-container">$0</div>
             <div class="minus"><p>-</p></div>
-            <input type="range" min="1" max="100" value="50">
+            <input type="range" class="money" name="money" min="110.000" max="750.000" value="110.000">
             <div class="sum"><p>+</p></div>
           </div>
           <div class="days-container">
